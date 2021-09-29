@@ -1,0 +1,21 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.scss';
+import Header from './components/Header/Header';
+import Section1 from './components/sections/Section1/Section1';
+import Section2 from './components/sections/Section2/Section2';
+import Section3 from './components/sections/Section3/Section3';
+import Section5 from './components/sections/Section5/Section5';
+import Footer from './components/Footer/Footer';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Header />
+    <Section1 />
+    <Section2 />
+    <Section3 />
+    <Section5 />
+    <Footer />
+  </React.StrictMode>,
+  document.getElementById('root')
+);

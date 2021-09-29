@@ -1,0 +1,20 @@
+.section5-item {
+  flex:  0 0 391px;
+  height: 370px;
+  margin-right: 32px;
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
+  &:hover {
+      box-shadow: 0px 9px 8px 12px rgba(34, 60, 80, 0.05);
+  }
+}
+.section5-item__img-wrapper {
+  margin-bottom: 16px;
+}
+.section5-item__discr {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 8px;
+}
