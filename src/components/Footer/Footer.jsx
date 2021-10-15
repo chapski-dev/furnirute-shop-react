@@ -32,7 +32,6 @@ const Footer = () => {
       'Twitter',
     ])
   }, []);
-
   return (
   <footer className="footer">
     <div className="container">

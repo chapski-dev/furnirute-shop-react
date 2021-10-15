@@ -16,10 +16,12 @@ function generateDropdownList (list) {
 
 const NavItem = (props) => {
   return (
-    <a className="nav-item">
-      {props.title}
-      {generateDropdownList(props.list)}
-    </a>
+    <li className="nav-item">
+      <a className="nav-item-link">
+        {props.title}
+      </a>
+        {generateDropdownList(props.list)}
+    </li>
   )
 }
 
