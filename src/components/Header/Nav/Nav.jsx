@@ -13,17 +13,19 @@ const Nav = () => {
         ]);
     }, []);
     return (
-      <nav className="nav">
-        <ul className="nav-items-list">
-          {navItem.map((navItem) => (
-            <NavItem
-              navItem={navItem}
-              title={navItem.title}
-              list={navItem.list}
-            />
-          ))}
-        </ul>
-      </nav>
+      <div className="header__menu">
+        <nav className="nav">
+          <ul className="nav-items-list">
+            {navItem.map((navItem) => (
+              <NavItem
+                navItem={navItem}
+                title={navItem.title}
+                list={navItem.list}
+              />
+            ))}
+          </ul>
+        </nav>
+      </div>
     )
 }
 

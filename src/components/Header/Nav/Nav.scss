@@ -1,5 +1,8 @@
 @import '../../../assets/scss/global.scss';
 
+.header__menu {
+  flex: 0 1 420px;
+}
 .nav {
   display: block;
 }

@@ -1,16 +1,23 @@
 import './NavItem.scss'
+import { DownOutlined } from '@ant-design/icons';
+import { Avatar } from 'antd';
 
 
 function generateDropdownList (list) {
   if (!list.length) return false;
   return (
-      <ul className="nav-item-dropdown">
-        {list.map((dropdown) => (
-            <li>
-              <a href="#" className="nav-item-dropdown-link">{dropdown}</a>
-            </li>
-        ))}
-      </ul>
+    <>
+    <button className="menu__arrow">
+      <Avatar size="large" icon={<DownOutlined />} />
+    </button>
+    <ul className="nav-item-dropdown">
+      {list.map((dropdown) => (
+          <li>
+            <a href="#" className="nav-item-dropdown-link">{dropdown}</a>
+          </li>
+      ))}
+    </ul>
+    </>
   )
 }
 

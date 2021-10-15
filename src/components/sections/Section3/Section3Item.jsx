@@ -1,4 +1,6 @@
+import { Avatar } from "antd";
 import "./Section3Item.scss";
+import { HeartOutlined, ShareAltOutlined } from '@ant-design/icons';
 
 // Rp. {props.oldPrice}
 function CreateOldPrice (oldPrice) {
@@ -36,13 +38,13 @@ export const Section3Item = (props) => {
       <div className="section3-item-hiden">
           <button className="section3-item-hiden__btn empty-btn">Add to cart</button>
         <div className="section3-item-hiden__link-wrapper">
-          <a href="#" className="section3-item-hiden__link">
-            <i></i>
-            Share
+          <a href="#" className="section3-item-hiden__link share">
+            <Avatar size="large" icon={<ShareAltOutlined />} />
+            <span className="text">Share</span>
           </a>
-          <a href="#" className="section3-item-hiden__link">
-            <i></i>
-            Like
+          <a href="#" className="section3-item-hiden__link like">
+            <Avatar size="large" icon={<HeartOutlined />} />
+            <span className="text">Like</span>
           </a>
         </div>
       </div>

@@ -54,6 +54,14 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
+  transition: .2s linear;
+
+  &:hover {
+    color: orange;
+  }
+  .text {
+    margin-left: 8px;
+  }
 }
 
 
